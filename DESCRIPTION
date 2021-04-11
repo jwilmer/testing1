@@ -1,0 +1,13 @@
+Package: showmydata
+Type: Package
+Title: Show My Data
+Version: 0.0.0
+Author: Jeremy Wilmer
+Maintainer: The package maintainer <jwilmer@wellesley.edu>
+Description: The companion module to the web apps at ShowMyData.org and the showmydata R package
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: jmvcore (>= 0.8.5), R6, ggplot2, stringr, psychometric, tidyr
+Depends: 
+    R (>= 2.10)

@@ -1,0 +1,17 @@
+Package: psychometric
+Type: Package
+Title: Applied Psychometric Theory
+Version: 2.2
+Date: 2010-08-07
+Author: Thomas D. Fletcher
+Maintainer: Thomas D. Fletcher <tom.fletcher.mp7e@statefarm.com>
+Description: Contains functions useful for correlation theory,
+        meta-analysis (validity-generalization), reliability, item
+        analysis, inter-rater reliability, and classical utility
+Depends: multilevel, nlme, R(>= 2.11.0)
+Imports: multilevel, nlme
+License: GPL (>= 2)
+Packaged: 2010-08-07 17:39:10 UTC; Tom Fletcher
+Repository: CRAN
+Date/Publication: 2010-08-08 12:41:38
+Built: R 4.0.2; ; 2020-07-16 01:30:27 UTC; unix

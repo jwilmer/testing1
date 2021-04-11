@@ -1,0 +1,285 @@
+---
+name:  smdcorrmulti
+title: Correlation for multiple measures
+menuGroup: showmydata
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: |
+        This is the description of the Correlation for multiple measures app.
+
+        This is the description of the Correlation for multiple measures app.
+
+        This is the description of the Correlation for multiple measures app.
+
+completeWhenFilled: true
+
+options:
+
+# Data
+    - name: data
+      type: Data
+
+    - name: vars
+      title: Variables
+      type: Variables
+      takeFromDataIfMissing: true
+      suggested:
+        - ordinal
+        - continuous
+      permitted:
+        - numeric
+      rejectInf: false
+
+# Manage datapoint visibility
+    - name: dottype
+      title: type
+      type: List
+      options:
+        - "ring"
+        - "dot"
+      default: "ring"
+
+    # - name: color_dot
+    #   title: color (see bit.ly/rcolors)
+    #   type: String
+    #   default: black
+
+    - name: dotsize
+      title: size (1-100)
+      type: String
+      default: "30"
+
+    # - name: xjitter
+    #   title: x jitter (0-100)
+    #   type: String
+    #   default: "0"
+    #
+    # - name: yjitter
+    #   title: y jitter (0-100)
+    #   type: String
+    #   default: "0"
+
+    - name: jitter_perc
+      title: jitter (0-100)
+      type: String
+      default: "0"
+
+    - name: dotopac
+      title: opacity (0-100)
+      type: String
+      default: "100"
+
+# Transform data
+    - name: spearman
+      title: percentile ranks
+      type: Bool
+      default: false
+
+# Show stats/data/colors
+    - name: upper
+      title: Upper/Right plots
+      type: List
+      options:
+        - "stats"
+        - "data"
+        - "neither"
+      default: "data"
+
+    - name: lower
+      title: Lower/Left plots
+      type: List
+      options:
+        - "stats"
+        - "data"
+        - "neither"
+      default: "neither"
+
+    - name: tint
+      title: Color by strength of correlation
+      type: Bool
+      default: false
+
+    - name: color1
+      title: color (see bit.ly/rcolors)
+      type: String
+      default: gray28
+
+    - name: tint2
+      title: Separate color for negative values
+      type: Bool
+      default: false
+
+    - name: color2
+      title: color (see bit.ly/rcolors)
+      type: String
+      default: blue
+
+# Fit lines/curves
+    - name: lw
+      title: Lines/Curves width (0-100)
+      type: String
+      default: "25"
+
+    - name: fit
+      title: Fits
+      type: List
+      options:
+        - "none"
+        - "line"
+        - "curve"
+        - "both"
+      default: "line"
+
+    - name: smoothness
+      title: Curve smoothness (1-100)
+      type: String
+      default: '50'
+
+    - name: digits
+      title: Statistics digits
+      type: List
+      options:
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+      default: "2"
+
+    # - name: showresiduals
+    #   title: show residuals
+    #   type: Bool
+    #   default: false
+
+    # - name: saveresiduals
+    #   title: Residuals
+    #   type: Output
+    #   default: false
+
+    # - name: lsline
+    #   title: line - least-squares
+    #   type: Bool
+    #   default: true
+
+    # - name: color1
+    #   title: color (see bit.ly/rcolors)
+    #   type: String
+    #   default: black
+
+    # - name: polynomial
+    #   title: curve - least-squares
+    #   type: Bool
+    #   default: false
+
+    # - name: color2
+    #   title: color (see bit.ly/rcolors)
+    #   type: String
+    #   default: blue
+
+    # - name: polynomial_degree
+    #   title: degree
+    #   type: List
+    #   options:
+    #     - "2"
+    #     - "3"
+    #     - "4"
+    #     - "5"
+    #     - "6"
+    #     - "7"
+    #   default: "2"
+
+    # - name: spline
+    #   title: curve - spline
+    #   type: Bool
+    #   default: false
+    #
+    # - name: color3
+    #   title: color (see bit.ly/rcolors)
+    #   type: String
+    #   default: red
+    #
+    # - name: spline_smoothness
+    #   title: smoothness (1-100)
+    #   type: String
+    #   default: '50'
+
+# Tweak axes
+
+    - name: equateaxes
+      title: Equate all axis ranges
+      type: Bool
+      default: false
+
+    - name: axesmin
+      title: x-axis minimum
+      type: String
+      default: auto
+
+    - name: axesmax
+      title: x-axis minimum
+      type: String
+      default: auto
+
+    # - name: rug
+    #   title: project data onto axes
+    #   type: Bool
+    #   default: false
+
+    # - name: xmin
+    #   title: x-axis minimum
+    #   type: String
+    #   default: auto
+
+    # - name: xmax
+    #   title: x-axis maximum
+    #   type: String
+    #   default: auto
+
+    # - name: ymin
+    #   title: y-axis minimum
+    #   type: String
+    #   default: auto
+
+    # - name: ymax
+    #   title: y-axis maximum
+    #   type: String
+    #   default: auto
+
+# Adjust labels & plot size
+
+    # - name: showstats
+    #   title: show stats on plot
+    #   type: Bool
+    #   default: true
+
+    - name: graphtitle
+      title: Title
+      type: String
+      default: auto
+
+    - name: variablelabels
+      title: Variable labels
+      type: String
+      default: auto
+
+    - name: ticklabelsize
+      title: Axis number size (1-100)
+      type: String
+      default: '30'
+
+    # - name: plotwidth
+    #   title: smoothness (1-100)
+    #   type: Number
+    #   min: 1
+    #   max: 100
+    #   default: 25
+
+    # - name: plotheight
+    #   title: smoothness (1-100)
+    #   type: Number
+    #   min: 1
+    #   max: 100
+    #   default: 25
+
+...

@@ -1,0 +1,196 @@
+---
+name:  smdcorr2
+title: Correlation for 2 measures
+menuGroup: showmydata
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: |
+        This is the description of the Correlation for 2 measures app.
+
+        This is the description of the Correlation for 2 measures app.
+
+        This is the description of the Correlation for 2 measures app.
+
+completeWhenFilled: true
+
+options:
+
+# Data
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Dependent Variable
+      type: Variable
+
+    - name: ind
+      title: Independent Variable
+      type: Variable
+
+# Manage datapoint visibility
+    - name: dottype
+      title: type
+      type: List
+      options:
+        - "ring"
+        - "dot"
+      default: "ring"
+
+    - name: color_dot
+      title: color (see bit.ly/rcolors)
+      type: String
+      default: black
+
+    - name: dotsize
+      title: size (1-100)
+      type: String
+      default: "30"
+
+    - name: xjitter
+      title: x jitter (0-100)
+      type: String
+      default: "0"
+
+    - name: yjitter
+      title: y jitter (0-100)
+      type: String
+      default: "0"
+
+    - name: dotopac
+      title: opacity (0-100)
+      type: String
+      default: "100"
+
+# Transform data
+    - name: spearman
+      title: percentile ranks
+      type: Bool
+      default: false
+
+# Fit lines/curves
+    - name: lw
+      title: line/curve widths (0-100)
+      type: String
+      default: "40"
+
+    - name: showresiduals
+      title: show residuals
+      type: Bool
+      default: false
+
+#    - name: saveresiduals
+#      title: Residuals
+#      type: Output
+#      default: false
+
+    - name: lsline
+      title: line - least-squares
+      type: Bool
+      default: true
+
+    - name: color1
+      title: color (see bit.ly/rcolors)
+      type: String
+      default: black
+
+    - name: polynomial
+      title: curve - least-squares
+      type: Bool
+      default: false
+
+    - name: color2
+      title: color (see bit.ly/rcolors)
+      type: String
+      default: blue
+
+    - name: polynomial_degree
+      title: degree
+      type: List
+      options:
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+      default: "2"
+
+    - name: spline
+      title: curve - spline
+      type: Bool
+      default: false
+
+    - name: color3
+      title: color (see bit.ly/rcolors)
+      type: String
+      default: red
+
+    - name: spline_smoothness
+      title: smoothness (1-100)
+      type: String
+      default: '50'
+
+# Tweak axes
+    - name: rug
+      title: project data onto axes
+      type: Bool
+      default: false
+
+    - name: xmin
+      title: x-axis minimum
+      type: String
+      default: auto
+
+    - name: xmax
+      title: x-axis maximum
+      type: String
+      default: auto
+
+    - name: ymin
+      title: y-axis minimum
+      type: String
+      default: auto
+
+    - name: ymax
+      title: y-axis maximum
+      type: String
+      default: auto
+
+# Adjust labels & plot size
+    - name: showstats
+      title: show stats on plot
+      type: Bool
+      default: true
+
+    - name: graphtitle
+      title: title
+      type: String
+      default: auto
+
+    - name: xvariablelabel
+      title: x variable label
+      type: String
+      default: auto
+
+    - name: yvariablelabel
+      title: y variable label
+      type: String
+      default: auto
+
+    # - name: plotwidth
+    #   title: smoothness (1-100)
+    #   type: Number
+    #   min: 1
+    #   max: 100
+    #   default: 25
+
+    # - name: plotheight
+    #   title: smoothness (1-100)
+    #   type: Number
+    #   min: 1
+    #   max: 100
+    #   default: 25
+
+...

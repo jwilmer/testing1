@@ -1,0 +1,8 @@
+exportPattern("^[[:alpha:]]+")
+import(jmvcore,R6,ggplot2,stringr,psychometric,tidyr)
+
+export(smdcorr2Class)
+export(smdcorr2Options)
+
+export(smdcorrmultiClass)
+export(smdcorrmultiOptions)

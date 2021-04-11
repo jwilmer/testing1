@@ -1,0 +1,165 @@
+title: Correlation for 2 measures
+name: smdcorr2
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Dependent Variable
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Independent Variable
+        children:
+          - type: VariablesListBox
+            name: ind
+            maxItemCount: 1
+            isTarget: true
+  - type: CollapseBox
+    label: Manage datapoint visibility
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: Label
+            label: Adjust point...
+          - type: ComboBox
+            name: dottype
+          - type: TextBox
+            name: color_dot
+            format: string
+          - type: TextBox
+            name: dotsize
+            label: size (1-100)
+            format: string
+          - type: TextBox
+            name: xjitter
+            label: x jitter (0-100)
+            format: string
+          - type: TextBox
+            name: yjitter
+            label: y jitter (0-100)
+            format: string
+          - type: TextBox
+            name: dotopac
+            label: opacity (0-100)
+            format: string
+  - type: CollapseBox
+    label: Transform data
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: spearman
+            label: percentile ranks
+  - type: CollapseBox
+    label: Fit lines/curves
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: TextBox
+            name: lw
+            label: line/curve widths (0-100)
+            format: string
+          - type: CheckBox
+            name: showresiduals
+            label: show residuals
+#          - type: Output
+#            name: saveresiduals
+#            label: save residuals
+          - type: Label
+            label: Line - least-squares
+          - type: CheckBox
+            name: lsline
+            label: include
+          - type: TextBox
+            name: color1
+            format: string
+          - type: Label
+            label: Curve - least-squares
+          - type: CheckBox
+            name: polynomial
+            label: include
+          - type: ComboBox
+            name: polynomial_degree
+          - type: TextBox
+            name: color2
+            format: string
+          - type: Label
+            label: Curve - spline
+          - type: CheckBox
+            name: spline
+            label: include
+          - type: TextBox
+            name: color3
+            format: string
+          - type: TextBox
+            name: spline_smoothness
+            label: smoothness (1-100)
+            format: string
+  - type: CollapseBox
+    label: Tweak axes
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: rug
+            label: project data onto axes
+          - type: TextBox
+            name: xmin
+            format: string
+          - type: TextBox
+            name: xmax
+            format: string
+          - type: TextBox
+            name: ymin
+            format: string
+          - type: TextBox
+            name: ymax
+            format: string
+  - type: CollapseBox
+    label: Adjust labels & plot size
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showstats
+            label: show stats on plot
+          - type: TextBox
+            name: graphtitle
+            format: string
+          - type: TextBox
+            name: xvariablelabel
+            format: string
+          - type: TextBox
+            name: yvariablelabel
+            format: string
+          # - type: TextBox
+          #   name: plotwidth
+          #   label: plot width (1-100)
+          #   format: number
+          # - type: TextBox
+          #   name: plotheight
+          #   label: plot height (1-100)
+          #   format: number

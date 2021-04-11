@@ -1,0 +1,20 @@
+---
+name:  smdcorr2
+title: Correlation for 2 measures
+jrs:   '1.1'
+
+items:
+
+# FOR DEBUGGING
+    # - name:  text
+    #   title: Numbers
+    #   type:  Preformatted
+
+    - name: plot
+      title: Plot
+      type: Image
+      width:  600
+      height: 600
+      renderFun: .plot
+
+...

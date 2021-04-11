@@ -1,0 +1,19 @@
+---
+name:  smdcorrmulti
+title: Correlation for multiple measures
+jrs:   '1.1'
+
+items:
+##FOR DEBUGGING
+    # - name:  text
+    #   title: Numbers
+    #   type:  Preformatted
+
+    - name: plot
+      title: Plot
+      type: Image
+      width:  700
+      height: 700
+      renderFun: .plot
+
+...

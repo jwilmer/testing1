@@ -1,0 +1,31 @@
+---
+title: Show My Data
+name: showmydata
+version: 0.0.0
+jms: '1.0'
+authors:
+  - Jeremy B. Wilmer
+maintainer: Jeremy B. Wilmer <jwilmer@wellesley.edu>
+date: '2021-04-01'
+type: R
+description: >-
+  The companion module to the web apps at ShowMyData.org and the showmydata R
+  package.
+analyses:
+  - title: Correlation for 2 measures
+    name: smdcorr2
+    ns: showmydata
+    menuGroup: showmydata
+    menuSubgroup: Correlation
+    menuTitle: Correlation for 2 measures
+    description: This is the description of the Correlation for 2 measures app.
+  - title: Correlation for multiple measures
+    name: smdcorrmulti
+    ns: showmydata
+    menuGroup: showmydata
+    menuTitle: Correlation for multiple measures
+    description: This is the description of the Correlation for multiple measures app.
+usesNative: true
+minApp: 1.0.8
+
+...

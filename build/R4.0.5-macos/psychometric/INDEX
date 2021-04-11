@@ -1,0 +1,62 @@
+ABHt32                  Table 3.2 from Arthur et al
+CAFAA                   Compound Attenuation Factor for Meta-Analytic
+                        Artifact Corrections
+CI.Rsq                  Confidence Interval for R-squared
+CI.Rsqlm                Confidence Interval for Rsq - from lm()
+CI.tscore               Confidence Intervals for Test Scores
+CIr                     Confidence Interval for a Correlation
+                        Coefficient
+CIrb                    Confidence Interval about Sample Weighted Mean
+                        Correlation
+CIrdif                  Confidence Interval for the difference in
+                        Correlation Coefficients
+CIz                     Confidence Interval for Fisher z'
+CVF                     Compound Variance Factor for Meta-Analytic
+                        Artifact Corrections
+CVratio                 Content Validity Ratio
+ClassUtil               Classical Utility of a Test
+CredIntRho              Credibility Interval for Meta-Analytic Rho
+EnterMeta               Enter Meta-Analysis Data
+Est.true                Estimation of a True Score
+FileDrawer              File Drawer N
+FunnelPlot              Funnel Plot for Meta-Analysis
+HSJt35                  Table 3.5 Hunter et al.
+ICC.CI                  Confidence interval for the Intra-class
+                        Correlation
+ICC.lme                 Intraclass Correlation Coefficient from a
+                        Mixed-Effects Model
+MetaTable               Summary function for 'Complete' Meta-Analysis
+Qrbar                   Meta-Analytic Q statistic for r-bar
+Qrho                    Meta-Analytic Q statistic for rho
+SE.Meas                 Standard Errors of Measurement (test scores)
+SErbar                  Standard Error for Sample Size Weighted Mean
+                        Correlation
+SEz                     Standard Error of Fishers z prime
+SpearmanBrown           Spearman-Brown Prophecy Formulae
+TestScores              Fictitious Test Scores for Illustrative
+                        Purposes
+Utility                 Marginal and Total Utility of a Test
+aRxx                    Artifact Distribtutions Used in Meta-Analysis
+alpha                   Cronbach's Coefficient Alpha
+alpha.CI                Confidence Interval for Coefficient Alpha
+cRRr                    Correction for Range Restriction
+discrim                 Item Discrimination
+item.exam               Item Analysis
+psychometric-package    Applied Psychometric Theory
+pvaaa                   Percent of Variance Accounted for by Artifacts
+                        in Rho
+pvse                    Percent of variance due to sampling error
+r.nil                   Nil hypothesis for a correlation
+r2z                     Fisher r to z'
+rbar                    Sample size weighted mean correlation
+rdif.nul                Null hypothesis for difference in two
+                        correlations
+rhoCA                   Meta-Analytically Derived Correlation
+                        Coefficient Corrected for Artifacts
+varAV                   Variance Due to Attenuating Artifacts
+varRCA                  Variance in Meta-Analytic Rho
+varRes                  Residual Variance in Meta-Analytic Correlation
+varResT                 True residual variance in correlations
+vare                    Sampling Error Variance
+varr                    Sample Size weighted variance
+z2r                     Fisher z' to r

@@ -1,0 +1,73 @@
+GmeanRel                Group Mean Reliability from an lme model (nlme
+                        package)
+ICC1                    Function to Estimate Intraclass Correlation
+                        Coefficient 1 or ICC(1) from an aov model
+ICC2                    Function to Estimate Intraclass Correlation
+                        Coefficient 2 or ICC(2) from an aov model
+ad.m                    Average deviation around mean or median
+ad.m.sim                Simulate significance of average deviation
+                        around mean or median
+awg                     Brown and Hauenstein (2005) awg agreement index
+bh1996                  Data from Bliese and Halverson (1996)
+bhr2000                 Data from Bliese, Halverson and Rothberg (2000)
+boot.icc                Bootstrap ICC values in 2-level data
+chen2005                Data from Chen (2005)
+cohesion                Five cohesion ratings from 11 individuals
+                        nested in 4 platoons in 2 larger units
+cordif                  Estimate whether two independent correlations
+                        differ
+cordif.dep              Estimate whether two dependent correlations
+                        differ
+cronbach                Estimate Cronbach's Alpha
+graph.ran.mean          Graph Random Group versus Actual Group
+                        distributions
+item.total              Item-total correlations
+klein2000               Data from Klein, Bliese, Kozlowski et al.,
+                        (2000)
+lq2002                  Data used in special issue of Leadership
+                        Quarterly, Vol. 13, 2002
+make.univ               Convert data from multivariate to univariate
+                        form
+mix.data                Randomly mix grouped data
+mult.icc                Multiple ICCs from a dataset
+mult.make.univ          Convert two or more variables from multivariate
+                        to univariate form
+quantile.agree.sim      S3 method for class 'agree.sim'
+quantile.disagree.sim   S3 method for class 'disagree.sim'
+quantile.rgr.waba       S3 method for class 'rgr.waba'
+ran.group               Randomly mix grouped data and return function
+                        results
+rgr.OLS                 Random Group Resampling OLS Regression
+rgr.agree               Random Group Resampling for Within-group
+                        Agreement
+rgr.waba                Random Group Resampling of Covariance Theorem
+                        Decomposition
+rmv.blanks              Remove blanks spaces from non-numeric variables
+                        imported from SPSS dataframes
+rtoz                    Conducts an r to z transformation
+rwg                     James et al., (1984) agreement index for single
+                        item measures
+rwg.j                   James et al., (1984) agreement index for
+                        multi-item scales
+rwg.j.lindell           Lindell et al. r*wg(j) agreement index for
+                        multi-item scales
+rwg.j.sim               Simulate rwg(j) values from a random null
+                        distribution
+rwg.sim                 Simulate rwg values from a random null
+                        distribution
+sam.cor                 Generate a Sample that Correlates with a Fixed
+                        Set of Observations
+sherifdat               Sherif (1935) group data from 3 person teams
+sim.icc                 Simulate 2-level ICC(1) values with and without
+                        level-1 correlation
+simbias                 Simulate Standard Error Bias in Non-Independent
+                        Data
+sobel                   Estimate Sobel's (1982) Test for Mediation
+summary.agree.sim       S3 method for class 'agree.sim'
+summary.disagree.sim    S3 method for class 'disagree.sim'
+summary.rgr.agree       S3 method for class 'rgr.agree'
+summary.rgr.waba        S3 method for class 'rgr.waba'
+tankdat                 Tank data from Bliese and Lang (in press)
+univbct                 Data from Bliese and Ployhart (2002)
+waba                    Covariance Theoreom Decomposition of Bivariate
+                        Two-Level Correlation
